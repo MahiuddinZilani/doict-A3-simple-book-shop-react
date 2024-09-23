@@ -8,7 +8,7 @@ const BookCard = ({ book }) => {
   console.log(book);
 
   return (
-    <div className="w-80 md:w/2 lg:w-full">
+    <div className="w-80 md:w/2 lg:w-full hover:scale-105 hover:shadow-lg transition-transform duration-300">
       <div className=" max-w-sm overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
         <div className="relative">
           <img

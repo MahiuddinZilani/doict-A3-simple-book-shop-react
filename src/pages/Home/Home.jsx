@@ -10,13 +10,14 @@ import BookCard from "../../components/cards/BookCard";
 function Home() {
   const books = useLoaderData();
 
-  // console.log(data);
   return (
-    <div className=" mx-auto h-max container mt-8 grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-      {books.map((book) => (
-        <BookCard key={book.id} book={book}></BookCard>
-      ))}
-    </div>
+    <>
+      <div className=" mx-auto h-max container mt-8 grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        {books.map((book) => (
+          <BookCard key={book.id} book={book}></BookCard>
+        ))}
+      </div>
+    </>
   );
 }
 

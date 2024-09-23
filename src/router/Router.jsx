@@ -16,7 +16,7 @@ const Router = createBrowserRouter([
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("/public/bookShopApi.json"),
+        loader: () => fetch("/bookShopApi.json"),
       },
       {
         path: "/about",

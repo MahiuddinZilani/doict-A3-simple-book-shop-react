@@ -2,7 +2,7 @@ import Menu from "./Menu";
 
 const Navbar = () => {
   return (
-    <section className="bg-slate-200 sticky top-0 left-0 w-full shadow-lg z-50">
+    <section className="bg-slate-300 sticky top-0 left-0 w-full shadow-lg z-50">
       <header className="container mx-auto flex items-center justify-between relative">
         {/* logo */}
         <div className="flex justify-center items-center gap-4">

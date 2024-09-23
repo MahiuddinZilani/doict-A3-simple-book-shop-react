@@ -18,7 +18,7 @@ const Menu = () => {
           open
             ? "flex justify-evenly absolute bg-slate-500 text-white top-16 left-0 w-full"
             : "hidden"
-        } md:flex md:flex-row md:static md:bg-slate-200 md:text-black md:space-x-6`}
+        } md:flex md:flex-row md:static md:bg-slate-300 md:text-black md:space-x-6`}
       >
         {ROUTES.map((route) => (
           <List key={route.id} route={route}></List>
