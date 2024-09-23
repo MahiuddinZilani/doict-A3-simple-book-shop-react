@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { TfiMenuAlt, TfiClose } from "react-icons/tfi";
 import { ROUTES } from "../../routes/routes";
-import Link from "./Link";
+import List from "./List";
 
 const Menu = () => {
   const [open, setOpen] = useState(false);
@@ -21,7 +21,7 @@ const Menu = () => {
         } md:flex md:flex-row md:static md:bg-slate-200 md:text-black md:space-x-6`}
       >
         {ROUTES.map((route) => (
-          <Link key={route.id} route={route}></Link>
+          <List key={route.id} route={route}></List>
         ))}
       </nav>
     </div>
