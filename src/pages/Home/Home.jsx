@@ -12,14 +12,10 @@ function Home() {
 
   // console.log(data);
   return (
-    <div className="">
-      <p>Home</p>
+    <div className=" mx-auto h-max container mt-8 grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       {books.map((book) => (
         <BookCard key={book.id} book={book}></BookCard>
       ))}
-      {/* {data.map((item) => (
-        <p key={item.id}>{item.bookName}</p> // Return JSX and add a unique key
-      ))} */}
     </div>
   );
 }
