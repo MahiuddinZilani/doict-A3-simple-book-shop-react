@@ -1,13 +1,17 @@
+/* eslint-disable react/no-unescaped-entities */
 import { Accordion } from "flowbite-react";
 
 const Faq = () => {
   return (
     <div className="container mx-auto mt-8">
+      <h2 className="mb-12 text-4xl font-bold leading-none text-center ">
+        Frequently Asked Questions
+      </h2>
       <Accordion collapseAll>
         {/* Question: 01 */}
         <Accordion.Panel>
           <Accordion.Title>
-            1. What is React.js and Explain the concept of "components" in
+            1. What is React.js and Explain the concept of components&quot in
             React.
           </Accordion.Title>
           <Accordion.Content>
