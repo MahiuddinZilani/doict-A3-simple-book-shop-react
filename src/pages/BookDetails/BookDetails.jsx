@@ -25,7 +25,7 @@ const BookDetails = () => {
   const handleClick = (message) => {
     toast.success(message, {
       position: "top-left",
-      autoClose: 3000, // Auto close after 3 seconds
+      autoClose: 3000,
     });
   };
 
@@ -59,7 +59,9 @@ const BookDetails = () => {
             <div className="flex flex-col justify-center items-center mt-6 space-y-3 lg:space-y-0 lg:flex-row">
               <button
                 onClick={() =>
-                  handleClick(`${bookName} is added to Wish to Read List!`)
+                  handleClick(
+                    `"${bookName}" has been successfully added to the Wishlist`
+                  )
                 }
                 className="block px-5 py-2 text-sm font-medium tracking-wider text-center text-white transition-colors duration-300 transform bg-gray-900 rounded-md hover:bg-gray-700"
               >
@@ -67,7 +69,11 @@ const BookDetails = () => {
               </button>
 
               <button
-                onClick={() => handleClick(`${bookName} is added to Cart!`)}
+                onClick={() =>
+                  handleClick(
+                    `${bookName} has been successfully added to the Cart`
+                  )
+                }
                 className="block px-5 py-2 text-sm font-medium tracking-wider text-center text-gray-700 transition-colors duration-300 transform bg-gray-200 rounded-md lg:mx-4 hover:bg-gray-300"
               >
                 Add to Cart
