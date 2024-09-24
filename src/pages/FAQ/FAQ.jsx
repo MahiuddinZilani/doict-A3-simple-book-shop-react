@@ -4,7 +4,7 @@ import { Accordion } from "flowbite-react";
 const Faq = () => {
   return (
     <div className="container mx-auto mt-8">
-      <h2 className="mb-12 text-4xl font-bold leading-none text-center ">
+      <h2 className="mb-8 text-4xl font-bold leading-none text-center ">
         Frequently Asked Questions
       </h2>
       <Accordion collapseAll>

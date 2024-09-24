@@ -2,7 +2,7 @@ const Blog = () => {
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="container px-6 py-10 mx-auto">
-        <h1 className="text-2xl font-semibold text-gray-800 capitalize lg:text-3xl dark:text-white text-center">
+        <h1 className="mb-8 text-4xl font-bold leading-none text-center ">
           From the blog
         </h1>
         <div className="grid grid-cols-1 gap-8 mt-8 md:mt-16 md:grid-cols-2">
