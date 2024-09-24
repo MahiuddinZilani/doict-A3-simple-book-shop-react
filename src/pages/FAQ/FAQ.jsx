@@ -4,7 +4,7 @@ import { Accordion } from "flowbite-react";
 const Faq = () => {
   return (
     <div className="bg-gray-100 min-h-screen py-12">
-      <div className="container mx-auto">
+      <div className="container max-w-screen-lg mx-auto ">
         <h2 className="mb-8 text-4xl font-bold leading-none text-center ">
           Frequently Asked Questions
         </h2>

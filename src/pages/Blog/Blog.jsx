@@ -1,7 +1,7 @@
 const Blog = () => {
   return (
-    <section className="bg-gray-100 min-h-screen py-12 dark:bg-gray-900">
-      <div className="container px-6 py-10 mx-auto">
+    <section className="bg-gray-100  min-h-screen py-12 dark:bg-gray-900">
+      <div className="container max-w-screen-lg px-6  mx-auto">
         <h1 className="mb-8 text-4xl font-bold leading-none text-center ">
           From the blog
         </h1>
