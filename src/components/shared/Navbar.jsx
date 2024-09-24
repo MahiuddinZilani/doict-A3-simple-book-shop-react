@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Menu from "./Menu";
 
 const Navbar = () => {
@@ -5,14 +6,16 @@ const Navbar = () => {
     <section className="bg-slate-300 sticky top-0 left-0 w-full shadow-lg z-50">
       <header className="container mx-auto flex items-center justify-between relative">
         {/* logo */}
-        <div className="flex justify-center items-center gap-4">
-          <img
-            src="images/book logo.png"
-            alt="book store logo"
-            className="w-16"
-          />
-          <h1 className="hidden md:contents">Book Store</h1>
-        </div>
+        <Link to="/">
+          <div className="flex justify-center items-center gap-4">
+            <img
+              src="../images/book logo.png"
+              alt="book store logo"
+              className="w-16"
+            />
+            <h1 className="hidden md:contents">Book Store</h1>
+          </div>
+        </Link>
 
         {/* menu */}
         <Menu></Menu>

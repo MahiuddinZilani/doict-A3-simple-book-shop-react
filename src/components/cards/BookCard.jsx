@@ -1,9 +1,10 @@
 import PropTypes from "prop-types";
 import Tag from "../tags/Tag";
 import { FaBookOpen } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const BookCard = ({ book }) => {
-  const { bookName, author, image, rating, category, tags } = book;
+  const { bookId, bookName, author, image, rating, category, tags } = book;
 
   console.log(book);
 
@@ -43,12 +44,14 @@ const BookCard = ({ book }) => {
               Rating:{rating}/5
             </p>
           </div>
-          <button className="bg-slate-900 rounded-lg text-sm sm:text-base flex items-center gap-x-3 justify-center text-white hover:bg-slate-900/80 duration-300 transition-colors border border-transparent px-8 py-2.5">
-            <span>
-              <FaBookOpen />
-            </span>
-            <span>Book Details</span>
-          </button>
+
+          <Link
+            to={`/book/${bookId}`}
+            className="bg-slate-900 rounded-lg text-sm sm:text-base flex items-center gap-x-3 justify-center text-white hover:bg-slate-900/80 duration-300 transition-colors border border-transparent px-8 py-2.5"
+          >
+            <FaBookOpen />
+            Book Details
+          </Link>
         </div>
       </div>
     </div>

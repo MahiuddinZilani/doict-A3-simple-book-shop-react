@@ -5,18 +5,19 @@ import Blog from "../pages/Blog/Blog";
 import ErrorPage from "../pages/Error/ErrorPage";
 import Root from "../Layout/Root";
 import Faq from "../pages/FAQ/FAQ";
+import BookDetails from "../pages/BookDetails/BookDetails";
 
 const Router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-
+    loader: () => fetch("/bookShopApi.json").then((res) => res.json()),
     errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
         element: <Home></Home>,
-        loader: () => fetch("/bookShopApi.json"),
+        loader: () => fetch("../bookShopApi.json"),
       },
       {
         path: "/about",
@@ -29,6 +30,11 @@ const Router = createBrowserRouter([
       {
         path: "/faq",
         element: <Faq></Faq>,
+      },
+      {
+        path: "/book/:bookId",
+        loader: () => fetch("../bookShopApi.json"),
+        element: <BookDetails></BookDetails>,
       },
     ],
   },

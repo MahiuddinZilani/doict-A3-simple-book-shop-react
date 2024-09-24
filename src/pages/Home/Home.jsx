@@ -9,6 +9,7 @@ import BookCard from "../../components/cards/BookCard";
 
 function Home() {
   const books = useLoaderData();
+  console.log(books);
 
   return (
     <>
