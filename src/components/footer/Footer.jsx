@@ -1,13 +1,15 @@
+import { Link } from "react-router-dom";
+
 const Footer = () => {
   return (
     <div>
       <footer className="bg-slate-300 mt-10 dark:bg-gray-900">
         <div className="container px-6 py-4 mx-auto">
           <div className="flex flex-col items-center text-center">
-            <a href="#" className="flex justify-center items-center gap-4">
+            <Link to={"/"} className="flex justify-center items-center gap-4">
               <img className="w-20" src="./images/book logo.png" alt="" />
               <p>Book Store</p>
-            </a>
+            </Link>
             <div className="flex flex-wrap justify-center mt-4 -mx-4">
               <a
                 href="#"
@@ -51,6 +53,7 @@ const Footer = () => {
               </a>
             </div>
           </div>
+          {/* Copyright and social media section  */}
           <hr className="my-2 border-gray-200 md:my-4 dark:border-gray-700" />
           <div className="flex flex-col items-center sm:flex-row sm:justify-between">
             <p className="text-sm text-gray-500 dark:text-gray-300">

@@ -11,7 +11,7 @@ const Router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    // loader: () => fetch("/bookShopApi.json").then((res) => res.json()),
+    loader: () => fetch("../bookShopApi.json"),
     errorElement: <ErrorPage />,
     children: [
       {
