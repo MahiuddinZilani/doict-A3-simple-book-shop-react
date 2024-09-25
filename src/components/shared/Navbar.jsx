@@ -3,8 +3,8 @@ import Menu from "./Menu";
 
 const Navbar = () => {
   return (
-    <section className="bg-slate-300 sticky top-0 left-0 w-full shadow-lg z-50">
-      <header className="container mx-auto flex items-center justify-between relative">
+    <section className="bg-slate-300 sticky top-0 left-0 w-full shadow-lg z-50  mx-auto">
+      <header className="container max-w-screen-lg mx-auto flex items-center justify-between relative">
         {/* logo */}
         <Link to="/">
           <div className="px-2 flex justify-center items-center gap-4 text-slate-700 hover:scale-125 hover:shadow-xl rounded-lg transition-transform duration-300">
