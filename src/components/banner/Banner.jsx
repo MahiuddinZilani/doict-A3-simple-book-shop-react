@@ -7,7 +7,10 @@ const Banner = () => {
           <h1 className="text-2xl font-semibold text-white">
             Unlock a World of Stories <br /> Find Your Next Favorite Book at{" "}
             <br />
-            <span className="text-orange-400 text-4xl"> Book Store</span>
+            <span className="text-yellow-300 text-4xl font-semibold">
+              {" "}
+              Book Store
+            </span>
           </h1>
           <button className="w-auto px-5 py-2 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md  hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
             Buy Book
@@ -21,11 +24,15 @@ const Banner = () => {
         }}
       >
         {/* small and medium device */}
-        <div className="lg:hidden flex items-center justify-center w-full h-full bg-slate-900/60">
+        <div className="lg:hidden flex items-center justify-center w-full h-full bg-slate-900/70">
           <div className="text-center">
             <h1 className="text-xl font-semibold text-white lg:text-3xl">
-              Unlock a World of Stories <br /> Find Your Next Favorite Book at
-              <span className="text-blue-400"> Book Store</span>
+              Unlock a World of Stories <br /> Find Your Next Favorite Book at{" "}
+              <br />
+              <span className="text-blue-500 text-3xl font-bold">
+                {" "}
+                Book Store
+              </span>
             </h1>
             <button className="w-auto px-5 py-2 mt-4 text-sm font-medium text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-md  hover:bg-blue-500 focus:outline-none focus:bg-blue-500">
               Buy Book

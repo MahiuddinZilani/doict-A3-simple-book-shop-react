@@ -73,7 +73,7 @@ const BookDetails = () => {
                   </p>
                   <p className="w-full flex flex-col gap-1 ">
                     <span className="font-semibold text-lg">Review:</span>{" "}
-                    <span className="italic">{review}</span>
+                    <span className="italic text-wrap">{review}</span>
                   </p>
                   <p className="w-full flex justify-between">
                     <span className="font-semibold text-lg">Tags:</span>{" "}
