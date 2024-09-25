@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -11,46 +11,46 @@ const Footer = () => {
               <p>Book Store</p>
             </Link>
             <div className="flex flex-wrap justify-center mt-4 -mx-4">
-              <a
-                href="#"
+              <NavLink
+                to={"/"}
                 className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-slate-900 dark:text-gray-300 dark:hover:text-blue-400"
                 aria-label="Reddit"
               >
                 {" "}
                 Home{" "}
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to={"/about"}
                 className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-slate-900 dark:text-gray-300 dark:hover:text-blue-400"
                 aria-label="Reddit"
               >
                 {" "}
                 About{" "}
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to={"/about"}
                 className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-slate-900 dark:text-gray-300 dark:hover:text-blue-400"
                 aria-label="Reddit"
               >
                 {" "}
                 Teams{" "}
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to={"#"}
                 className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-slate-900 dark:text-gray-300 dark:hover:text-blue-400"
                 aria-label="Reddit"
               >
                 {" "}
                 Privacy{" "}
-              </a>
-              <a
-                href="#"
+              </NavLink>
+              <NavLink
+                to={"#"}
                 className="mx-4 text-sm text-gray-600 transition-colors duration-300 hover:text-slate-900 dark:text-gray-300 dark:hover:text-blue-400"
                 aria-label="Reddit"
               >
                 {" "}
                 Cookies{" "}
-              </a>
+              </NavLink>
             </div>
           </div>
           {/* Copyright and social media section  */}
@@ -61,7 +61,7 @@ const Footer = () => {
             </p>
             <div className="flex -mx-2">
               <a
-                href="#"
+                to={"#"}
                 className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-slate-900 dark:hover:text-blue-400"
                 aria-label="Reddit"
               >
@@ -75,7 +75,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                to={"#"}
                 className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-slate-900 dark:hover:text-blue-400"
                 aria-label="Facebook"
               >
@@ -89,7 +89,7 @@ const Footer = () => {
                 </svg>
               </a>
               <a
-                href="#"
+                to={"#"}
                 className="mx-2 text-gray-600 transition-colors duration-300 dark:text-gray-300 hover:text-slate-900 dark:hover:text-blue-400"
                 aria-label="Github"
               >
