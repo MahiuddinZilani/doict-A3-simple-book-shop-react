@@ -7,13 +7,13 @@ const Navbar = () => {
       <header className="container mx-auto flex items-center justify-between relative">
         {/* logo */}
         <Link to="/">
-          <div className="flex justify-center items-center gap-4">
+          <div className="px-2 flex justify-center items-center gap-4 text-slate-700 hover:scale-125 hover:shadow-xl rounded-lg transition-transform duration-300">
             <img
               src="../images/book logo.png"
               alt="book store logo"
               className="w-16"
             />
-            <h1 className="hidden md:contents md:text-xl lg:text-3xl font-bold">
+            <h1 className="hidden md:contents md:text-xl lg:text-3xl font-bold ">
               Book Store
             </h1>
           </div>
