@@ -1,12 +1,6 @@
-// const Home = () => {
-//   return <div></div>;
-// };
-
 import { useLoaderData } from "react-router-dom";
 import BookCard from "../../components/cards/BookCard";
 import Banner from "../../components/banner/Banner";
-
-// export default Home;
 
 function Home() {
   const books = useLoaderData();

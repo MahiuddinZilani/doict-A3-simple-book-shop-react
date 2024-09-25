@@ -38,24 +38,33 @@ Welcome to **BookStore**, a modern and responsive online platform for book enthu
 
 ```
 /public
-  └── /bookShopApi.json       # Data source for books
+  └── /bookShopApi.json                 # Data source for books
 /src
-  ├── components               # Reusable components
-  │   ├── Navbar.jsx           # Main navigation bar
-  │   ├── Footer.jsx           # Footer section
-  │   ├── BookCard.jsx         # Component for displaying book details
-  │   └── Banner.jsx           # Homepage banner
+  ├── components                        # Reusable components
+  │   ├── shared ──
+  |   |   ├── List.jsx
+  |   |   ├── Menu.jsx
+  |   |   └── Navbar.jsx
+  |   |
+  │   ├── footer ── Footer.jsx           # Footer section
+  │   ├── cards ── BookCard.jsx          # Component for displaying book details
+  │   ├── banner ── Banner.jsx           # Homepage banner
+  |   └── tags ── Tag.jsx
+  |
+  |
   ├── pages
-  │   ├── Home.jsx             # Homepage with book listings
-  │   ├── About.jsx            # About us page
-  │   ├── BookDetails.jsx      # Book detail page (uses params to fetch data)
-  │   ├── Cart.jsx             # Shopping cart page
-  │   ├── Blog.jsx             # Blog section for news and articles
-  │   ├── FAQ.jsx              # Frequently asked questions
-  │   └── ErrorPage.jsx        # Custom error page
-  ├── App.js                   # Main app file
-  ├── index.js                 # Entry point for React
-  └── routes.js                # BrowserRouter and route definitions
+  │   ├── Home ── Home.jsx                # Homepage with book listings
+  │   ├── About ── About.jsx              # About us page
+  │   ├── BookDetails ── BookDetails.jsx  # Book detail page (uses params to fetch data)
+  │   ├── Blog ── Blog.jsx                # Blog section for news and articles
+  │   ├── Faq ── FAQ.jsx                  # Frequently asked questions
+  │   └── Error ── ErrorPage.jsx          # Custom error page
+  |
+  ├── Layout ── Root.jsx                  # Main Layout
+  ├── App.js                              # Main app file
+  ├── index.js                            # Entry point for React
+  ├── router ── Router.jsx                # Entry point for React
+  └── routes.js                           # BrowserRouter and route definitions
 ```
 
 ## Installation & Setup
@@ -70,7 +79,7 @@ Welcome to **BookStore**, a modern and responsive online platform for book enthu
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/bookstore-platform.git
+   git clone https://github.com/MahiuddinZilani/doict-A3-simple-book-shop-react
    cd bookstore-platform
    ```
 
@@ -86,7 +95,7 @@ Welcome to **BookStore**, a modern and responsive online platform for book enthu
    npm start
    ```
 
-   The project will be live at `http://localhost:3000`.
+   The project will be live at `https://a3-doict-book-shop.surge.sh/`.
 
 ## Key Attributes of the Project
 
@@ -132,7 +141,3 @@ const BookDetails = () => {
 - Implement **authentication** for users to sign in and track their orders.
 - Add **real-time search** and filter features using **Fuse.js** or other fuzzy search libraries.
 - Enhance **payment integration** using services like **Stripe** or **PayPal**.
-
-## License
-
-This project is open-source and available under the **MIT License**.

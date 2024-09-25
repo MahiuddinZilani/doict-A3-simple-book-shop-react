@@ -13,7 +13,9 @@ const Navbar = () => {
               alt="book store logo"
               className="w-16"
             />
-            <h1 className="hidden md:contents">Book Store</h1>
+            <h1 className="hidden md:contents md:text-xl lg:text-3xl font-bold">
+              Book Store
+            </h1>
           </div>
         </Link>
 
@@ -35,7 +37,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
-{
-  /* <div className="fixed top-0 left-0 w-full shadow-lg"></div> */
-}
