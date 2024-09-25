@@ -1,4 +1,6 @@
-# BookStore Platform
+# Book Store
+
+[Book Store](https://a3-doict-book-shop.surge.sh/)
 
 Welcome to **BookStore**, a modern and responsive online platform for book enthusiasts. This project is built using **React**, **React Router DOM**, **Tailwind CSS**, and several UI component libraries such as **Meraki UI**, **Mamba UI**, and **Flowbite**. It also integrates **SweetAlert** for notifications, creating an interactive and user-friendly experience. The platform allows users to explore, search for, and purchase books online, offering a seamless interface for book lovers.
 
@@ -141,3 +143,10 @@ const BookDetails = () => {
 - Implement **authentication** for users to sign in and track their orders.
 - Add **real-time search** and filter features using **Fuse.js** or other fuzzy search libraries.
 - Enhance **payment integration** using services like **Stripe** or **PayPal**.
+
+git add .
+git commit -m "readme.md is edited"
+git push
+
+npm run build
+surge dist a3-doict-book-shop.surge.sh
